@@ -16,7 +16,7 @@ html {
   font-size: 1em;
   line-height: 1.4;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -50,9 +50,6 @@ hr {
   padding: 0;
 }
 
-nav{
-
-}
 
 /*
  * Remove the gap between audio, canvas, iframes,
@@ -91,11 +88,69 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+header{
+  background-image: url('../img/ericnam-2.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 813px;
+  margin: 0;
+}
 
+nav{
+display: flex;
+}
 
+nav ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 40%;
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 36px;
+}
 
+nav li{
+  margin: 10px;
+}
 
+header h1{
+  color: black;
+  font-size: 60px;
+  font-family: 'Source Sans Pro', sans-serif;
+  right: 80%;
+}
 
+h2{
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 60px;
+  right: 80%;
+}
+
+.home_image{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+}
+
+footer{
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  height: 64px;
+}
+
+.footer{
+  align-items: center;
+}
 
 /* ==========================================================================
    Helper classes
