@@ -94,7 +94,10 @@ header{
   background-repeat: no-repeat;
   background-position: center;
   height: 813px;
+  width: 1497px;
   margin: 0;
+  object-fit: cover;
+  object-position: 20px 10px;
 }
 
 nav{
@@ -111,6 +114,7 @@ nav ul{
   color: black;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 36px;
+  margin: 0px;
 }
 
 nav li{
@@ -122,13 +126,14 @@ header h1{
   font-size: 60px;
   font-family: 'Source Sans Pro', sans-serif;
   right: 80%;
+  margin: 0px;
 }
 
 h2{
   color: black;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 60px;
-  right: 80%;
+  font-size: 50px;
+  padding-left: 20px;
 }
 
 .home_image{
@@ -138,19 +143,27 @@ align-items: center;
 flex-direction: row;
 }
 
+.home_image img{
+  width: 450px;
+  height: auto;
+  margin: 25px;
+  border-radius: 40px;
+}
+
+
 footer{
   background-color: black;
   background-size: cover;
   background-position: center;
   font-size: 18px;
   font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  padding: 10px;
   color: white;
   height: 64px;
+  width: 100%;
 }
 
-.footer{
-  align-items: center;
-}
 
 /* ==========================================================================
    Helper classes
