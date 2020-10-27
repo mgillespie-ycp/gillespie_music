@@ -88,20 +88,47 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* hides horizontal scrolling on the website */
+body{
+  overflow-x: hidden;
+  width: 100vw;
+}
+
 header{
-  background-image: url('../img/ericnam-2.jpeg');
+  background-image: url('../img/ericnam_home_banner.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 813px;
-  width: 1497px;
-  margin: 0;
-  object-fit: cover;
-  object-position: 20px 10px;
+  height: 820px;
+  width: 100vw;
+}
+
+/* put in image names for after the ../img/ to tie the right background image for these pages */
+#about_hero{
+  background-image: url('../img/');
+}
+
+#tour_hero{
+  background-image: url('../img/');
+}
+
+#upto_hero{
+  background-image: url('../img/');
+}
+
+/* setup a box for the h1 and the nav to sit in */
+.topnav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 nav{
 display: flex;
+margin: 0px;
 }
 
 nav ul{
@@ -110,8 +137,6 @@ nav ul{
   justify-content: center;
   align-items: center;
   position: relative;
-  left: 40%;
-  color: black;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 36px;
   margin: 0px;
@@ -121,11 +146,15 @@ nav li{
   margin: 10px;
 }
 
+nav ul li a{
+  text-decoration: none;
+  color: #000;
+}
+
 header h1{
   color: black;
   font-size: 60px;
   font-family: 'Source Sans Pro', sans-serif;
-  right: 80%;
   margin: 0px;
 }
 
@@ -141,15 +170,20 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: row;
+width: 100%;
+margin: 2%;
 }
 
+/* Changed the fixed width of the image to 70% so they scale with the website as the browser changes width */
 .home_image img{
-  width: 450px;
+  width: 70%;
   height: auto;
   margin: 25px;
   border-radius: 40px;
 }
 
+
+/* Footer Styles */ 
 
 footer{
   background-color: black;
