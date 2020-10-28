@@ -99,7 +99,7 @@ header{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 820px;
+  height: 700px;
   width: 100vw;
 }
 
@@ -161,8 +161,9 @@ header h1{
 h2{
   color: black;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 50px;
-  padding-left: 20px;
+  font-size: 40px;
+  padding-left: 70px;
+  padding-top: 100px;
 }
 
 .home_image{
@@ -183,7 +184,7 @@ margin: 2%;
 }
 
 
-/* Footer Styles */ 
+/* Footer Styles */
 
 footer{
   background-color: black;
