@@ -14,20 +14,34 @@
   <link rel="stylesheet" href="css/main.css">
 <body>
 
+<!-- Off Canvas Menu -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Me</a>
+  <a href="tour.html">Tour</a>
+  <a href="upto.html">What Am I Up To?</a>
+</div>
+
+<!-- Wraps content for off canvas menu-->
+<div id="main">
   <header id="tour_hero">
     <div class="topnav">
+    <h1>Eric Nam</h1>
       <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="tour.html">Tour</a></li>
-            <li><a href="upto.html">What Am I Up To?</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="tour.html">Tour</a></li>
+          <li><a href="upto.html">What Am I Up To?</a></li>
         </ul>
+        <!-- Toggles Off Canvas Menu-->
+        <span class="hamburger" onclick="openNav()">&#9776;</span>
       </nav>
     </div>
 </header>
 
-<h1>Tour</h1>
+<h2>Tour</h2>
 
 <section class="tour_info">
   <div class="tour_dates">
@@ -79,6 +93,8 @@
     <p>All Rights Reserved CJ & EM Entertainment</p>
   </div>
 </footer>
+
+</div>
 
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>

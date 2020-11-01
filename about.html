@@ -14,33 +14,55 @@
   <link rel="stylesheet" href="css/main.css">
 <body>
 
+  <!-- Off Canvas Menu -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Me</a>
+  <a href="tour.html">Tour</a>
+  <a href="upto.html">What Am I Up To?</a>
+</div>
+
+
+<!-- Wraps content for off canvas menu-->
+<div id="main">
   <header id="about_hero">
     <div class="topnav">
+    <h1>Eric Nam</h1>
       <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="tour.html">Tour</a></li>
-            <li><a href="upto.html">What Am I Up To?</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="tour.html">Tour</a></li>
+          <li><a href="upto.html">What Am I Up To?</a></li>
         </ul>
+        <!-- Toggles Off Canvas Menu-->
+        <span class="hamburger" onclick="openNav()">&#9776;</span>
       </nav>
     </div>
 </header>
 
-<h1>Who Is Eric Nam?</h1>
+<section class="maincontent">
 
-<div class="about_me_text">
-  <p>Eric was born and raised in Atlanta, Georgia, United States. Eric has two younger brothers, Eddie and Brian Nam, both of whom are soccer players. Eric graduated from The Lovett School in 2007 and from Boston College in 2011 with a major in International Studies, a minor in Asian Studies, and spent a year abroad at Peking University in Beijing, China.He had accepted a position as a business analyst at Deloitte Consulting in New York City, before deferring to participate in microfinance initiatives in India, after this he decided to pursue a career in entertainment.
+<div id="intro">
+
+<div id="introcopy">
+  <h2>Who Is Eric Nam?</h2>
+  <p>Eric was born and raised in Atlanta, Georgia, United States. Eric has two younger brothers, Eddie and Brian Nam, both of whom are soccer players. Eric graduated from The Lovett School in 2007 and from Boston College in 2011 with a major in International Studies, a minor in Asian Studies, and spent a year abroad at Peking University in Beijing, China.He had accepted a position as a business analyst at Deloitte Consulting in New York City, before deferring to participate in microfinance initiatives in India, after this he decided to pursue a career in entertainment.<br/>
 Following a viral YouTube cover, MBC invited Eric to Seoul to compete on the popular program, "Star Audition: Birth of a Great Star 2", a show similar to X Factor. After eight months, Eric placed within the Top 5 contestants and jump-started his career in South Korea.</p>
 </div>
 
-<div class="about_me_image">
-  <img src="img/about_me_image.png" alt="about_me_image">
+<div id="introimage">
+  <img src="img/about_me_image.png" alt="Eric Nam taking a selfie">
 </div>
 
 <div class="twitter">
   <a class="twitter-timeline" href="https://twitter.com/ericnamofficial?ref_src=twsrc%5Etfw">Tweets by ericnamofficial</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
+
+</div>
+
+</section>
 
 <section class="social_media">
   <div class="instagram">
@@ -58,13 +80,14 @@ Following a viral YouTube cover, MBC invited Eric to Seoul to compete on the pop
   </div>
 </section> 
 
+
 <footer>
   <div class="footer">
     <p>All Rights Reserved CJ & EM Entertainment</p>
   </div>
 </footer>
 
-
+</div>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/main.js"></script>
 

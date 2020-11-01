@@ -91,7 +91,6 @@ textarea {
 /* hides horizontal scrolling on the website */
 body{
   overflow-x: hidden;
-  width: 100vw;
 }
 
 header{
@@ -103,18 +102,82 @@ header{
   width: 100vw;
 }
 
-/* put in image names for after the ../img/ to tie the right background image for these pages */
+/* Images put in..made sure ID was used as these are unique and added the targeted style for the <a> to be white on the other pages.*/
 #about_hero{
-  background-image: url('../img/');
+  background-image: url('../img/about_banner.png');
+}
+
+#about_hero a{
+  color: #fff;
 }
 
 #tour_hero{
-  background-image: url('../img/');
+  background-image: url('../img/ericnam_about.jpg');
+}
+
+#tour_hero a{
+  color: #fff;
 }
 
 #upto_hero{
-  background-image: url('../img/');
+  background-image: url('../img/ericnam_upto.jpg');
 }
+
+#upto_hero a{
+  color: #fff;
+}
+
+/* basically hides the Eric Nam name without moving the position */
+#about_hero h1,
+#tour_hero h1,
+#upto_hero h1{
+  opacity: 0%;
+}
+
+/* sets up the main content on about....you can use this on your other pages as well */
+.maincontent{
+  width: 100vw;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  position: relative;
+}
+
+/* Unique styling for the row of text, image, and twitter */
+#intro{
+  width: 100%;
+  text-align: left;
+  margin-right: 2%;
+  position: relative;
+  top: 100px;
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#introcopy{
+  width: 40%;
+  margin-left: 2%;
+}
+
+#introimage{
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+
+#introimage img{
+  width: 400px;
+}
+
+.twitter {
+  width: 400px;
+  height: 500px;
+  overflow-y: scroll;
+}
+
 
 /* setup a box for the h1 and the nav to sit in */
 .topnav{
@@ -162,8 +225,6 @@ h2{
   color: black;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 40px;
-  padding-left: 70px;
-  padding-top: 100px;
 }
 
 .home_image{
@@ -177,7 +238,7 @@ margin: 2%;
 
 /* Changed the fixed width of the image to 70% so they scale with the website as the browser changes width */
 .home_image img{
-  width: 70%;
+  width: 80%;
   height: auto;
   margin: 25px;
   border-radius: 40px;
@@ -197,6 +258,59 @@ footer{
   color: white;
   height: 64px;
   width: 100%;
+}
+
+/* Off Canvas Navigation */
+
+/* We'll hide the hamburger for desktop and show it on mobile */
+.hamburger{
+  font-size:30px;
+  cursor:pointer;
+  color: #fff;
+  display: inline;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-right .5s;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 
 
