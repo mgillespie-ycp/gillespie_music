@@ -158,7 +158,7 @@ header{
 }
 
 #introcopy{
-  width: 40%;
+  width: 42%;
   margin-left: 2%;
 }
 
@@ -222,6 +222,7 @@ padding-left: 3px;
 .about_header{
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 64px;
+  margin: 0px;
 }
 
 
