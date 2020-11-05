@@ -127,6 +127,13 @@ header{
   color: #fff;
 }
 
+#contact_hero{
+  background-image: url('../img/eric_nam_meme.png');
+}
+
+#contact_hero a{
+  color: #fff;
+}
 /* basically hides the Eric Nam name without moving the position */
 #about_hero h1,
 #tour_hero h1,
@@ -289,6 +296,129 @@ margin: 2%;
   height: auto;
   margin: 25px;
   border-radius: 40px;
+}
+
+/*test podcast styles*/
+
+container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 306px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border-radius: 40px;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.container{
+  position: relative;
+  width: 50%;
+  background-color: #C99122;
+}
+
+/* What are you up to styles*/
+
+button{
+  width: 176px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #214200;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 24px;
+  color: white;
+}
+
+.button1{
+  margin-left: 70px;
+}
+
+.button2{
+  margin-left: 80px;
+}
+
+.button3{
+  margin-left: 80px;
+}
+
+.paradise_mv{
+    margin-left: 70px;
+    margin-bottom: 20px;
+}
+
+h3{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 48px;
+  margin-left: 150px;
+}
+
+#performances{
+  display: flex;
+  justify-content: center;
+  align-items: right;
+  width: 45%
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.music_video{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    width: 45%
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+h4{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 48px;
+  margin-left: 150px;
+  margin-bottom: 0px;
+}
+
+
+.paradise_performance{
+  margin-bottom: 40px;
+}
+
+/* Contact Styles*/
+
+form input{
+  margin: 20px 0;
+  padding: 10px 20px;
+  font-size: 24px;
+  border-radius: 28px;
+  border: 4px solid white;
 }
 
 
