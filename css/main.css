@@ -300,50 +300,61 @@ margin: 2%;
 
 /*test podcast styles*/
 
-container {
+.container {
   position: relative;
-  width: 50%;
+  width: 350px;
+  margin: 2%;
 }
 
 .image {
-  opacity: 1;
   display: block;
-  width: 306px;
-  transition: .5s ease;
-  backface-visibility: hidden;
-  border-radius: 40px;
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
 }
 
-.middle {
-  transition: .5s ease;
-  opacity: 0;
+.overlay {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #C99122;
+  border-radius: 30px;
 }
 
-.container:hover .image {
-  opacity: 0.3;
-}
-
-.container:hover .middle {
+.container:hover .overlay {
   opacity: 1;
 }
 
 .text {
-  background-color: #4CAF50;
   color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.container{
-  position: relative;
-  width: 50%;
-  background-color: #C99122;
+/* sets up your link styles */
+.text a{
+  border-radius: 30px;
+  background-color: #214200;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  margin: 0 auto;
+  line-height: 5px;
+  padding: 5px;
+  border: 5px solid #214200;
 }
 
 /* What are you up to styles*/
@@ -356,6 +367,8 @@ button{
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 24px;
   color: white;
+  border: none;
+  margin: 5px;
 }
 
 .button1{
@@ -385,7 +398,7 @@ h3{
   display: flex;
   justify-content: center;
   align-items: right;
-  width: 45%
+  width: 45%;
   margin: 0 auto;
   flex-direction: column;
 }
@@ -394,7 +407,7 @@ h3{
     display: flex;
     justify-content: center;
     align-items: left;
-    width: 45%
+    width: 45%;
     margin: 0 auto;
     flex-direction: column;
 }
