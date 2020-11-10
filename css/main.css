@@ -253,15 +253,14 @@ padding-left: 3px;
 
 .topnavc{
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 90vw;
-  margin-left: 3%;
-  margin-right: 3%;
+  width: 100vw;
+  background-color: #000;
 }
 
-.topnavc nav a{
-  color: black;
+.topnavc nav{
+  position: relative;
+  left: 30%;
 }
 
 nav{
@@ -276,7 +275,7 @@ nav ul{
   align-items: center;
   position: relative;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 36px;
+  font-size: 30px;
   margin: 0px;
   margin-left: 20px;
 }
@@ -458,7 +457,6 @@ h4{
   margin-bottom: 40px;
   display: flex;
   align-items: right;
-  width: 50%;
   margin-right: 10px;
   flex-direction: column;
 }
@@ -536,12 +534,18 @@ footer{
   position: relative
 }
 
-.tour_cities{
-  margin-left: 150px;
+.tour_cities,
+.tour_places,
+.tour_dates{
+  display: flex;
+  flex-direction: row;
+  width: 30%
 }
 
-.tour_places{
-  margin-left: 150px;
+.gridblock h1,
+.gridblock h2,
+.gridblock h3{
+  margin: 0 auto;
 }
 
 .tour_h{
@@ -551,8 +555,30 @@ footer{
 }
 
 .merch{
-  width: 1500px;
-  height: 384px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Gridblock */
+
+.gridblock{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: row;
+}
+
+.left_content,
+.right_content{
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 2%;
 }
 
 /* We'll hide the hamburger for desktop and show it on mobile */
