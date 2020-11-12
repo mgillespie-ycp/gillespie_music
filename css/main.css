@@ -132,7 +132,7 @@ header{
 }
 
 #contact_hero a{
-  color: #fff;
+  color: gray;
 }
 /* basically hides the Eric Nam name without moving the position */
 #about_hero h1,
@@ -251,12 +251,6 @@ padding-left: 3px;
   margin-right: 3%;
 }
 
-.topnavc{
-  display: flex;
-  align-items: center;
-  width: 100vw;
-  background-color: #000;
-}
 
 .topnavc nav{
   position: relative;
@@ -398,15 +392,15 @@ button{
 }
 
 .button1{
-  margin-left: 125px;
+  margin-left: 80px;
 }
 
 .button2{
-  margin-left: 80px;
+  margin-left: 55px;
 }
 
 .button3{
-  margin-left: 80px;
+  margin-left: 60px;
 }
 
 .paradise_mv{
@@ -414,20 +408,17 @@ button{
     margin-bottom: 20px;
 }
 
+.upto_h{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 64px;
+}
+
 h3{
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 48px;
-  margin-left: 150px;
+  align-items: center;
 }
 
-
-.music_video{
-    display: flex;
-    align-items: left;
-    width: 50%;
-    margin-left: 10px;
-    flex-direction: column;
-}
 
 h4{
   font-family: 'Source Sans Pro', sans-serif;
@@ -436,11 +427,23 @@ h4{
   margin-bottom: 0px;
 }
 
+h5{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 48px;
+    margin-left: 150px;
+    margin-bottom: 0px;
+}
+
+h6{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 48px;
+  align-items: center;
+}
+
 .paradise_performance{
   display: flex;
   align-items: right;
   width: 50%;
-  margin-right: 10px;
   flex-direction: column;
   margin-bottom: 40px;
 }
@@ -449,7 +452,6 @@ h4{
   display: flex;
   align-items: right;
   width: 50%;
-  margin-right: 10px;
   flex-direction: column;
 }
 
@@ -457,7 +459,6 @@ h4{
   margin-bottom: 40px;
   display: flex;
   align-items: right;
-  margin-right: 10px;
   flex-direction: column;
 }
 
@@ -573,13 +574,14 @@ footer{
 
 .left_content,
 .right_content{
-  width: 45%;
+  width: 50%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   margin: 2%;
 }
+
 
 /* We'll hide the hamburger for desktop and show it on mobile */
 .hamburger{
