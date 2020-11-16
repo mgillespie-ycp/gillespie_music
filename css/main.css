@@ -294,7 +294,7 @@ h2{
   color: black;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 45px;
-  margin-left: 75px;
+  margin-left: 55px;
 }
 
 .home_image{
@@ -389,23 +389,17 @@ button{
 
 .music_buttons{
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2%;
 }
 
-.button1{
-  margin-left: 80px;
-}
-
-.button2{
-  margin-left: 55px;
-}
-
-.button3{
-  margin-left: 60px;
-}
-
-.paradise_mv{
-    margin-left: 70px;
-    margin-bottom: 20px;
+.new_music{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2%;
 }
 
 .upto_h{
@@ -423,21 +417,20 @@ h3{
 h4{
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 48px;
-  margin-left: 150px;
-  margin-bottom: 0px;
+  margin: 0 auto;
 }
 
 h5{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 48px;
-    margin-left: 150px;
-    margin-bottom: 0px;
+    margin: 0 auto;
 }
 
 h6{
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 48px;
   align-items: center;
+  margin: 0 auto;
 }
 
 .paradise_performance{
@@ -574,11 +567,10 @@ footer{
 
 .left_content,
 .right_content{
-  width: 50%;
+  width: 47%;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
   margin: 2%;
 }
 
