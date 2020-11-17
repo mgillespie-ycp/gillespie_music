@@ -392,6 +392,7 @@ button{
   flex-direction: row;
   justify-content: space-between;
   margin: 2%;
+  padding-bottom: 20px;
 }
 
 .new_music{
@@ -421,9 +422,10 @@ h4{
 }
 
 h5{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 48px;
-    margin: 0 auto;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 48px;
+  margin: 0 auto;
+  align-items: center;
 }
 
 h6{
@@ -446,6 +448,7 @@ h6{
   align-items: right;
   width: 50%;
   flex-direction: column;
+  padding-bottom: 20px;
 }
 
 .tweets{
@@ -463,7 +466,9 @@ form input{
   font-size: 24px;
   border-radius: 28px;
   border: 4px solid white;
+  background-color: #C99122;
 }
+
 
 form{
   margin-top: 20px;
@@ -525,15 +530,25 @@ footer{
   margin: 0px;
   display: flex;
   flex-direction: row;
-  position: relative
+  position: relative;
 }
 
-.tour_cities,
-.tour_places,
 .tour_dates{
   display: flex;
   flex-direction: row;
-  width: 30%
+  width: 25%;
+}
+
+.tour_cities{
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+}
+
+.tour_places{
+  display: flex;
+  flex-direction: row;
+  width: 35%;
 }
 
 .gridblock h1,
@@ -626,6 +641,53 @@ footer{
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-height: 1024px) {
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+  }
+  .topnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  .topnavc nav{
+    position: relative;
+    left: 30%;
+  }
+
+  nav{
+  display: flex;
+  margin: 0px;
+  }
+
+  header{
+    background-image: url('../img/ericnam_home_banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+    width: 100vw;
+  }
+  h2 {
+      color: black;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 35px;
+      align-items: center;
+      margin-left: 250px;
+  }
+
 }
 
 
