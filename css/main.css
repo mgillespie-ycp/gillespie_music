@@ -575,7 +575,7 @@ footer{
   width: 100vw;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   margin: 0 auto;
   flex-direction: row;
 }
@@ -643,6 +643,11 @@ footer{
   .sidenav a {font-size: 18px;}
 }
 
+
+
+/* Media Queries */
+
+/* Smaller Desktop */
 @media screen and (max-height: 1024px) {
   nav ul {
     list-style-type: none;
@@ -687,6 +692,80 @@ footer{
       align-items: center;
       margin-left: 250px;
   }
+
+}
+
+/* iPad */
+@media screen and (max-width: 768px){
+
+  /* Global Styles */
+
+  .topnav {
+    width: 100vw;
+    position: relative;
+    right: 50px;
+}
+
+nav {
+  width: 90%;
+}
+
+  /* Home Page */
+
+  header h1 {
+    position: relative;
+    left: 80px;
+}
+
+
+  /* About Page */
+
+  #intro {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#introcopy {
+  width: 85%;
+  margin-left: 2%;
+}
+
+.phone p {
+padding-left: 0px;
+}
+
+.facebook img {
+  width: 100px;
+}
+
+.instagram img {
+  width: 100px;
+}
+  
+  
+  /* Upto Page */
+
+  .gridblock {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.paradise_performance,
+.been_performance{
+width: auto;
+}
+
+
+
+}
+
+
+/* iPhone */
+@media screen and (max-width: 320px){
+
+
 
 }
 
