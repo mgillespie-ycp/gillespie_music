@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  </head>
 <body>
 
   <!-- Off Canvas Menu -->
@@ -25,22 +26,21 @@
 </div>
 
 <!-- Wraps content for off canvas menu-->
-<div id="main">
   <header id="upto_hero">
     <div class="topnav">
-    <h1>Eric Nam</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="tour.html">Tour</a></li>
-          <li><a href="upto.html">What Am I Up To?</a></li>
-          <li><a href="contact.html">Contact Me</a></li>
-        </ul>
-        <!-- Toggles Off Canvas Menu-->
-        <span class="hamburger" onclick="openNav()">&#9776;</span>
-      </nav>
-    </div>
+      <h1>Eric Nam</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="tour.html">Tour</a></li>
+            <li><a href="upto.html">What Am I Up To?</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+          <!-- Toggles Off Canvas Menu-->
+          <span class="hamburger" onclick="openNav()">&#9776;</span>
+        </nav>
+      </div>
 </header>
 
 <h2 class="upto_h">What Am I Up To?</h2>
@@ -66,6 +66,7 @@
   <section class="new_music">
     <h6>The Podcasts</h6>
 
+    <div id="podcastsection">
         <div class="container">
           <img src="img/kpop.png" alt="Avatar" class="image">
           <div class="overlay">
@@ -98,6 +99,7 @@
             </div>
           </div>
         </div>
+      </div>
 
   </section>
 
@@ -135,7 +137,6 @@
   </div>
 </footer>
 
-</div>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/main.js"></script>
 
