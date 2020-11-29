@@ -1004,7 +1004,7 @@ footer {
     text-align: center;
     padding: 10px;
     color: white;
-    height: 40px;
+    height: 70px;
     width: 100%;
 }
 
@@ -1211,6 +1211,70 @@ h6 {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+button {
+    width: 58px;
+    height: 17px;
+    border-radius: 30px;
+    background-color: #214200;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 8px;
+    color: white;
+    border: none;
+    margin: 0px;
+}
+
+.music_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2%;
+    padding-bottom: 20px;
+    width: 210px;
+}
+
+#music_video{
+  width: 218px;
+  height: 118px;
+}
+
+#performance{
+  width: 218px;
+  height: 118px;
+}
+
+#extra_vids{
+  width: 218px;
+  height: 118px;
+}
+
+footer {
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    height: 38px;
+    width: 100%;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    background-color: #C99122;
+    color: white;
+}
+
+
 
 }
 
