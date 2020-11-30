@@ -403,9 +403,11 @@ button{
 }
 
 #podcastsection{
-  flex-direction: row;
+  flex-direction: column;
   display: flex;
-  width: 90vw;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .upto_h{
@@ -957,6 +959,14 @@ button {
   text-align: center;
 }
 
+#podcastsection{
+  flex-direction: row;
+  display: flex;
+  width: 200%;
+  justify-content: center;
+  align-items: center;
+}
+
 /*Tour Page*/
 
 .tour_info ul {
@@ -1289,18 +1299,31 @@ button {
 }
 
 #music_video{
-  width: 218px;
-  height: 118px;
+  width: 300px;
+  height: 180px;
 }
 
 #performance{
-  width: 218px;
-  height: 118px;
+  width: 300px;
+  height: 180px;
 }
 
 #extra_vids{
-  width: 218px;
-  height: 118px;
+  width: 300px;
+  height: 180px;
+}
+
+#podcastsection{
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.left_content, .right_content {
+  width: 95%;
+
 }
 
 footer {
